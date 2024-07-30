@@ -1,1 +1,1 @@
-# digital-scale-with-load-cell
+# Creating a Digital Scale with Load Cell
