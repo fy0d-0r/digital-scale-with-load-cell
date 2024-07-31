@@ -10,12 +10,18 @@
 - LCD I2C Display
 - Half-sized Breadboard
 
-## Codes Explained
+## Codes Breakdown
 Including Required Libraries
 ```cpp
 #include "HX711.h"
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
+```
+
+Initializing Objects to Work With
+```
+HX711 loadcell;
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 ```
 
 ## Calibration
