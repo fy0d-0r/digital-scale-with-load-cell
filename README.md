@@ -30,11 +30,39 @@ Including Required Libraries
 #include <LiquidCrystal_I2C.h>
 ```
 
-Initializing Objects to Work With
+
+Initializing the Hx711 on Specified Pins
 ```cpp
 HX711 loadcell;
-LiquidCrystal_I2C lcd(0x27, 16, 2);
+const int LOADCELL_DOUT_PIN = 4;
+const int LOADCELL_SCK_PIN = 5;
+const long calibration_factor = 420.89795918367346938775510204082; <= The constant is calculated through calibration process and adjusting the outcome by trial and error
+
+// void setup()
+loadcell.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
+loadcell.set_scale(calibration_factor);
+
+// void loop()
+float data = loadcell.get_units(10);
 ```
+
+Initializing LCD I2C
+```cpp
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+// void setup()
+lcd.init();
+lcd.backlight();
+
+// void loop()
+lcd.print(data);
+lcd.setCursor(5, 0);
+lcd.print("kg");
+delay(1000);
+lcd.clear();
+```
+
+
 
 ## Calibration
 We only get serial data when we have some weight on the scale. We need a way to change the electrical signals to kilograms. This process is called calibration. In order to perform calibration, we need to calculate calibration factor first.
