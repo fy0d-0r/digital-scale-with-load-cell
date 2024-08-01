@@ -3,8 +3,17 @@
 ## Assembly
 ![](https://github.com/fy0d-0r/digital-scale-with-load-cell/blob/main/images/assembled-components.png)
 
-DT - GPIO pin 4
-SCK - GPIO pin 5
+### Connections between Hx711 and Arduino UNO
+- DT - GPIO pin 4
+- SCK - GPIO pin 5
+- GND on Hx711 - GND on Arduino UNO
+- VCC on Hx711 - 5V on Arduino UNO
+
+### Connections between LCD I2C and Arduino UNO
+- SDA - A4
+- SCL - A5
+- GND on LCD I2C - GND on Arduino UNO
+- VCC on LCD I2C - 5V on Arduino UNO
 
 ### Components
 - Arduino UNO Development Board
