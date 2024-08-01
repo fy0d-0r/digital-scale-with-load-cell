@@ -36,7 +36,7 @@ Initializing the Hx711 on Specified Pins
 HX711 loadcell;
 const int LOADCELL_DOUT_PIN = 4;
 const int LOADCELL_SCK_PIN = 5;
-const long calibration_factor = 420.89795918367346938775510204082; <= The constant is calculated through calibration process and adjusting the outcome by trial and error
+const long calibration_factor = 420.89795918367346938775510204082; // The constant is calculated through calibration process and adjusting the outcome by trial and error
 
 // void setup()
 loadcell.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);
