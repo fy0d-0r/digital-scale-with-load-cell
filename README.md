@@ -44,7 +44,7 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 > `set_scale()` function set the scale specified. If no parameter is specified scale is defaulted to 1.
 > This means, since we do not have calibration factor yet, we just want to print the values as they are. So we multiply with 1 to change nothing.
 4. Call `tare()` function to reset the readings to 0.
-5. Place a known weight on the scale
+5. Place a known weight onto the scale
 6. Calculate the Calibration factor according to `calibration_factor = printed_value / known_weight`
 
 ```cpp
