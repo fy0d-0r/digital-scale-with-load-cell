@@ -47,7 +47,7 @@ We only get serial data when we have some weight on the scale. We need a way to 
 4. Call `tare()` function to reset the readings to 0.
 5. Place a known weight onto the scale
 6. Calculate the Calibration factor
-> calibration_factor = printed_value / known_weight
+> calibration_factor = serial_data / known_weight
 
 ```cpp
 #include "HX711.h"
