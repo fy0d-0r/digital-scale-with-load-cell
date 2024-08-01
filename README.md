@@ -38,12 +38,14 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 ## Calibration
 
-> Before calibration process be sure no load is applied on the load cell.
-
-`set_scale()` function set the scale specified. IF no parameter is specified scale is set to 1.
-This means since we do not have calibration factor yet, we just want to print the values as they are. So we multiply with 1 to change nothing.
-`tare()` function resets the readings to 0.
-`scale.begin(4, 5); //DT, SCK` Initializing the scale at GPIO pin 4 for DT and pin 5 for SCK.
+1. Before calibration process be sure no load is applied on the load cell.
+2. Call `scale.begin(4, 5);` for initializing the scale at GPIO pin 4 for DT and pin 5 for SCK.
+3. Call `set_scale()` function with no parameter
+> `set_scale()` function set the scale specified. IF no parameter is specified scale is defaulted to 1.
+> This means since we do not have calibration factor yet, we just want to print the values as they are. So we multiply with 1 to change nothing.
+4. Call `tare()` function to reset the readings to 0.
+5. Place a known weight on the scale
+6. Calculate the Calibration factor according to `calibration_factor = printed_value / known_weight`
 
 ```cpp
 #include "HX711.h"
