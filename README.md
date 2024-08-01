@@ -3,6 +3,9 @@
 ## Assembly
 ![](https://github.com/fy0d-0r/digital-scale-with-load-cell/blob/main/images/assembled-components.png)
 
+DT - GPIO pin 4
+SCK - GPIO pin 5
+
 ### Components
 - Arduino UNO Development Board
 - Load Cell 5kg
