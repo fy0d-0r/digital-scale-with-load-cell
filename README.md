@@ -1,7 +1,7 @@
 # Creating a Digital Scale with Load Cell
 
 ## Assembly
-[![Watch the video]()](https://github.com/fy0d-0r/digital-scale-with-load-cell/blob/main/assets/videos/simulation.mp4)
+![](https://github.com/fy0d-0r/digital-scale-with-load-cell/blob/main/assets/images/assembled-components.png)
 
 ### Connections between Hx711 and Arduino UNO
 - DT - GPIO pin 4
