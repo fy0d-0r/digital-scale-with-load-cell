@@ -2,7 +2,7 @@
 
 ## Assembly
 
-![simulation-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/fdad5033-f1b4-470a-8e54-5fc090a4020e)
+
 
 ### Connections between Hx711 and Arduino UNO
 - DT - GPIO pin 4
