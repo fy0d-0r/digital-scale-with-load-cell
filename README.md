@@ -3,6 +3,8 @@
 ## Assembly
 ![](https://github.com/fy0d-0r/digital-scale-with-load-cell/blob/main/assets/images/assembled-components.png)
 
+![simulation-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/fdad5033-f1b4-470a-8e54-5fc090a4020e)
+
 ### Connections between Hx711 and Arduino UNO
 - DT - GPIO pin 4
 - SCK - GPIO pin 5
