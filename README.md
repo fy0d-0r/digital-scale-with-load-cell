@@ -2,7 +2,7 @@
 
 ## Assembly
 
-![simulation](https://github.com/user-attachments/assets/257b3408-27fe-4d91-a722-b11b1b64c76a)
+![simulation](https://github.com/fy0d-0r/digital-scale-with-load-cell/blob/main/assets/images/simulation.gif)
 
 ### Connections between Hx711 and Arduino UNO
 - DT - GPIO pin 4
