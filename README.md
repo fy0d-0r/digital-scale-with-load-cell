@@ -8,7 +8,7 @@ Our goal is to provide an educational and practical project that not only enhanc
 
 Since this repo is intended for sharing, feel free to use our code.
 
-## Assembly
+## Circuit Diagram
 
 ![simulation](https://github.com/fy0d-0r/digital-scale-with-load-cell/blob/main/assets/images/simulation.gif)
 
