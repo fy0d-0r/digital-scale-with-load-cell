@@ -15,22 +15,28 @@ Since this repo is intended for sharing, feel free to use our code.
 In the above GIF we have performed simulation of our assembled components on the site called [Wokwi](https://wokwi.com/). We recommend checking it out.
 
 ### Connections between Hx711 and Arduino UNO
-- DT - GPIO pin 4
-- SCK - GPIO pin 5
-- GND on Hx711 - GND on Arduino UNO
-- VCC on Hx711 - 5V on Arduino UNO
+
+|     Hx711     | Arduino Uno R3 |
+| ------------- |:--------------:|
+|      DT       |   GPIO pin 4   |
+|     SCK       |   GPIO pin 5   |
+|     GND       |       GND      |
+|     VCC       |       5V       |
 
 ### Connections between LCD I2C and Arduino UNO
-- SDA - A4
-- SCL - A5
-- GND on LCD I2C - GND on Arduino UNO
-- VCC on LCD I2C - 5V on Arduino UNO
+
+|     Hx711     | Arduino Uno R3 |
+| ------------- |:--------------:|
+|     SDA       |  Analog A4 pin |
+|     SCL       |  Analog A5 pin |
+|     GND       |       GND      |
+|     VCC       |       5V       |
 
 ### Components
-- Arduino UNO Development Board
+- Arduino UNO r3
 - Load Cell 5kg
 - Hx711 Amplifier
-- LCD I2C Display
+- LCD I2C Display (along with adapter module)
 - Half-sized Breadboard
 
 ## Codes Breakdown
@@ -40,7 +46,6 @@ Including Required Libraries
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 ```
-
 
 Initializing the Hx711 on Specified Pins
 ```cpp
@@ -72,8 +77,6 @@ lcd.print("kg");
 delay(1000);
 lcd.clear();
 ```
-
-
 
 ## Calibration
 We only get serial data when we have some weight on the scale. We need a way to change the electrical signals to kilograms. This process is called calibration. In order to perform calibration, we need to calculate calibration factor first.
