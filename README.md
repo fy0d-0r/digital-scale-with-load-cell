@@ -14,7 +14,7 @@ Since this repo is intended for sharing, feel free to use our code.
 
 In the above GIF we have performed simulation of our assembled components on the site called [Wokwi](https://wokwi.com/). We recommend checking it out.
 
-### Connections between Hx711 and Arduino UNO
+### Connections between Hx711 and Arduino Uno
 
 |     Hx711     | Arduino Uno R3 |
 | ------------- |:--------------:|
@@ -23,7 +23,7 @@ In the above GIF we have performed simulation of our assembled components on the
 |     GND       |       GND      |
 |     VCC       |       5V       |
 
-### Connections between LCD I2C and Arduino UNO
+### Connections between LCD I2C and Arduino Uno
 
 |     Hx711     | Arduino Uno R3 |
 | ------------- |:--------------:|
