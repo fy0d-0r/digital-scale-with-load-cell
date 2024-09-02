@@ -81,7 +81,7 @@ lcd.clear();
 ## Calibration
 We only get serial data when we have some weight on the scale. We need a way to change the electrical signals to kilograms. This process is called calibration. In order to perform calibration, we need to calculate calibration factor first.
 
-1. Before calibration process be sure no load is applied on the load cell.
+1. Before the calibration process be sure no load is applied on the load cell.
 2. Call `scale.begin(4, 5);` for initializing the scale at GPIO pin 4 for DT and pin 5 for SCK.
 3. Call `set_scale()` function with no parameter
 > `set_scale()` function set the scale specified. If no parameter is specified scale is defaulted to 1.
