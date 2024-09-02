@@ -101,3 +101,4 @@ void loop() {
   delay(1000);
 }
 ```
+> Since this repo is intended for sharing, feel free to use our code.
