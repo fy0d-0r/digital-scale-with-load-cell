@@ -12,7 +12,7 @@ Since this repo is intended for sharing, feel free to use our code.
 
 ![simulation](https://github.com/fy0d-0r/digital-scale-with-load-cell/blob/main/assets/images/simulation.gif)
 
-In the above GIF we have performed simulation of our assembled components on the site called [Wokwi](https://wokwi.com/).
+In the above GIF we have performed simulation of our assembled components on the site called [Wokwi](https://wokwi.com/). We recommend checking it out.
 
 ### Connections between Hx711 and Arduino UNO
 - DT - GPIO pin 4
