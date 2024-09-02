@@ -1,5 +1,13 @@
 # Creating a Digital Scale with Load Cell
 
+Welcome to our Digital Scale project, a comprehensive guide to building a highly accurate and reliable digital weighing scale using a load cell and HX711 amplifier. This project is perfect for makers, hobbyists, and anyone interested in learning more about electronics, sensors, and data acquisition.
+
+The load cell, a transducer that converts force into a measurable electrical output, paired with the HX711, a precision 24-bit analog-to-digital converter (ADC), allows us to measure weight with great accuracy. This project will walk you through every step of the process, from assembling the hardware components to writing the code to calibrate and read measurements from the scale.
+
+Our goal is to provide an educational and practical project that not only enhances your understanding of how digital scales work but also offers a hands-on experience with hardware interfacing and data processing. Whether you're a beginner looking to learn the basics or an experienced maker seeking to refine your skills, this guide will serve as a valuable resource.
+
+Since this repo is intended for sharing, feel free to use our code.
+
 ## Assembly
 
 ![simulation](https://github.com/fy0d-0r/digital-scale-with-load-cell/blob/main/assets/images/simulation.gif)
@@ -101,4 +109,3 @@ void loop() {
   delay(1000);
 }
 ```
-> Since this repo is intended for sharing, feel free to use our code.
